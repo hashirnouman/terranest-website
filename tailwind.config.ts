@@ -13,11 +13,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      fontFamily :{
+      fontFamily: {
         sans: ['Urbanist', 'sans-serif'],
+        secondary:['Poppins']
       },
       backgroundImage: {
-        'main': "url('/images/background.jpeg')"
+        'main': "url('/images/background-2.png')",
+        'dining': "url('/images/dining-2.jpeg')"
       }
     },
   },

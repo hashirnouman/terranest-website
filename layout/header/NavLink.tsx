@@ -8,10 +8,10 @@ interface INavLink {
 }
 const NavLink = ({ href, text, active }: INavLink) => {
   return (
-    <Link href={href} className="cursor-pointer">
+    <Link href={href} className="cursor-pointer mb-[4px]">
       <div className="flex flex-col gap-[2px] font-normal">
         {text}
-        {active && <div className="bg-white h-[4px] w-auto rounded"></div>}
+        {active && <span className="bg-white h-[4px] w-auto rounded"></span>}
       </div>
     </Link>
   );
