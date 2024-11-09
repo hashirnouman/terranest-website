@@ -13,6 +13,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily :{
+        sans: ['Urbanist', 'sans-serif'],
+      },
+      backgroundImage: {
+        'main': "url('/images/background.jpeg')"
+      }
     },
   },
   plugins: [],

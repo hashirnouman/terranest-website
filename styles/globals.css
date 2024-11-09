@@ -2,3 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .bg-glass {
+        @apply bg-[#38383780] bg-opacity-[50%] w-[200px] h-[200px] backdrop-blur-[18px] border-white border-opacity-[50%] border-[1px] text-white;
+    }
+}
+
+/* Urbanist - Regular */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Urbanist - Medium */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Urbanist - Bold */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Urbanist - Light */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Urbanist - ExtraBold */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Urbanist - Black */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Urbanist - Italic Variants */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/urbanist/Urbanist-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
