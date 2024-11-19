@@ -6,6 +6,9 @@
     .bg-glass {
         @apply bg-[#38383780] bg-opacity-[50%] backdrop-blur-[18px] border-white border-opacity-[50%] border-[1px] text-white;
     }
+    .border-custom {
+        @apply border-[#FFFFFF] border-[1px] border-opacity-[20%]
+    }
 }
 
 * {

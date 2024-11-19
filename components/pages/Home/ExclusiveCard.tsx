@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const ExclusiveCard = () => {
   return (
-    <div className="w-[257px] bg-glass h-auto rounded-[20px] py-[25px] flex flex-col justify-start items-center px-[14px]">
+    <div className="w-full bg-glass h-auto rounded-[20px] py-[25px] flex flex-col justify-start items-center px-[8px]">
       <p className="text-white text-[20px] font-bold text-center mb-[12px]">
         Exclusive Sale Offer
       </p>

@@ -9,7 +9,7 @@ const Section = () => {
         width={1100}
         height={435}
         alt="bg"
-        className="absolute top-[32px] right-[32px]"
+        className=""
       />
     </section>
   );

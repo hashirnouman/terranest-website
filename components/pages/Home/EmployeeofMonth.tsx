@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const EmployeeofMonth = () => {
   return (
-    <div className="w-[257px] py-[25px] bg-glass rounded-[20px] flex flex-col justify-center items-center">
+    <div className="w-full py-[25px] bg-glass rounded-[20px] flex flex-col justify-center items-center">
       <p className="font-bold text-[20px]">Employee of the Month</p>
       <p className="font-semibold text-[15.71px]">June 2024</p>
       <Image
