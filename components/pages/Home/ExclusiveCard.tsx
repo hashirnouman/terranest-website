@@ -52,12 +52,7 @@ const ExclusiveCard = () => {
           }
           text="230 sq.m"
         />
-        <Tag
-          icon={
-            <Image src="/icons/building.svg" width={20} height={20} alt="bed" />
-          }
-          text="Building 4"
-        />
+
         <Tag
           icon={
             <Image src="/icons/sofa.svg" width={20} height={20} alt="bed" />
