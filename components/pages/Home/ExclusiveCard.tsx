@@ -1,9 +1,9 @@
-import { Tag } from "@/components/ui/Tag";
+import { MiniTag } from "@/components/ui/Minitag";
 import Image from "next/image";
 import Link from "next/link";
 const ExclusiveCard = () => {
   return (
-    <div className="w-full bg-glass h-auto rounded-[20px] py-[25px] flex flex-col justify-start items-center px-[8px]">
+    <div className="w-full bg-glass h-auto rounded-[20px] py-[25px] flex flex-col justify-start items-center px-[14px]">
       <p className="text-white text-[20px] font-bold text-center mb-[12px]">
         Exclusive Sale Offer
       </p>
@@ -27,12 +27,12 @@ const ExclusiveCard = () => {
           Signature
         </div>
       </div>
-      <div className="flex mt-[11.58px] justify-between w-full mb-[4px]">
-        <p className=" text-[12px] font-bold">The Bluewaters Residencies</p>
-        <p className="text-[12px] font-semibold">AED 55,000</p>
+      <div className="flex mt-[11.58px] justify-between items-center w-full mb-[4px]">
+        <p className=" text-[14px] font-bold">The Bluewaters Residencies</p>
+        <p className="text-[14px] font-semibold">AED 55,000</p>
       </div>
       <div className="gap-0">
-        <p className="font-medium  text-[9px]">
+        <p className="font-medium  text-[14px]">
           A stunning 4-bedroom, 3-bathroom ,full sea view corner unit in a
           peaceful suburban neighborhood and a...
           <br />
@@ -41,24 +41,24 @@ const ExclusiveCard = () => {
           </Link>
         </p>
       </div>
-      <div className="flex gap-[3px] flex-wrap  my-[12px]">
-        <Tag
-          icon={<Image src="/icons/bed.svg" width={20} height={20} alt="bed" />}
+      <div className="flex ">
+        <MiniTag
+          icon={<Image src="/icons/bed.svg" width={10} height={10} alt="bed" />}
           text="4-Bedroom"
         />
-        <Tag
+        {/* <MiniTag
           icon={
             <Image src="/icons/globe.svg" width={20} height={20} alt="bed" />
           }
           text="230 sq.m"
         />
 
-        <Tag
+        <MiniTag
           icon={
             <Image src="/icons/sofa.svg" width={20} height={20} alt="bed" />
           }
           text="Fully Furnished"
-        />
+        /> */}
       </div>
       <Link
         href=""

@@ -9,7 +9,8 @@ export default function Home() {
     <div className="mt-[10px]">
       <div className="flex gap-[10px] ">
         <Aside />
-        <div className="w-[80%]">
+        <div className="w-[80%] flex flex-col gap-[10px]">
+          <Section />
           <Stats />
         </div>
       </div>

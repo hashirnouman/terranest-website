@@ -19,7 +19,7 @@ const config: Config = {
       },
       backgroundImage: {
         'main': "url('/images/background-2.png')",
-        'dining': "url('/images/dining-2.jpeg')"
+        'dining': "url('/images/dine.png')"
       }
     },
   },
