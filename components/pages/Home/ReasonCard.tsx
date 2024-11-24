@@ -6,7 +6,7 @@ interface IReasonCard {
 }
 const ReasonCard = ({ title, text, image }: IReasonCard) => {
   return (
-    <div className="bg-glass border-custom rounded-[10px] h-[615px] w-[575px]  pt-[32px] flex flex-col  px-[19px] relative">
+    <div className="bg-glass border-custom rounded-[10px] h-[615px] w-[575px]  pt-[32px] flex flex-col  px-[19px] relative mb-2">
       <Image
         src={image}
         width={537}

@@ -36,12 +36,12 @@ const Navbar = () => {
           // active={router.pathname === "/comming-soon"}
         />
         <NavLink
-          href="/offplan"
+          href="/comming-soon"
           text="Off Plan"
           // active={router.pathname === "/offline"}
         />
         <NavLink
-          href="/commercial"
+          href="/comming-soon"
           text="Commercial"
           // active={router.pathname === "/commercial"}
         />
