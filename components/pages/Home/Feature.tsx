@@ -16,12 +16,11 @@ const Feature = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </p>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-center gap-[15px]">
         <FeatureCard />
         <FeatureCard />
         <FeatureCard />
       </div>
-      
     </div>
   );
 };

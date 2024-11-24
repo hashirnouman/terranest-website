@@ -25,21 +25,25 @@ const Navbar = () => {
     <nav className="bg-glass w-[633px] rounded-[30px] h-[52px] flex justify-center items-center">
       <div className="flex justify-between items-center w-full px-8">
         <NavLink href="/" text="Home" active={router.pathname === "/"} />
-        <NavLink href="/buy" text="Buy" active={router.pathname === "/buy"} />
         <NavLink
-          href="/rent"
-          text="Rent"
-          active={router.pathname === "/rent"}
+          href="/comming-soon"
+          text="Buy"
+          // active={router.pathname === "/comming-soon"}
         />
         <NavLink
-          href="/offline"
-          text="Offline"
-          active={router.pathname === "/offline"}
+          href="/comming-soon"
+          text="Rent"
+          // active={router.pathname === "/comming-soon"}
+        />
+        <NavLink
+          href="/offplan"
+          text="Off Plan"
+          // active={router.pathname === "/offline"}
         />
         <NavLink
           href="/commercial"
           text="Commercial"
-          active={router.pathname === "/commercial"}
+          // active={router.pathname === "/commercial"}
         />
         <NavDropdown text="Latest Insights" />
         <NavDropdown text="Explore More" />

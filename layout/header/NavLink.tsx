@@ -4,7 +4,7 @@ import React from "react";
 interface INavLink {
   href: string;
   text: string;
-  active: boolean;
+  active?: boolean;
 }
 
 const NavLink = ({ href, text, active }: INavLink) => {

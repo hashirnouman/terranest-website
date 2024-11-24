@@ -7,7 +7,7 @@ interface IFastCard {
 }
 const FactCard = ({ number, text, url }: IFastCard) => {
   return (
-    <div className="w-full h-[142px] rounded-[20px] bg-glass px-[21px] flex  flex-col justify-center border-custom">
+    <div className="w-full h-[160px] rounded-[20px] bg-glass px-[21px] flex  flex-col justify-center border-custom">
       <div className="flex w-full justify-between">
         <div className="font-sans font-bold text-[28px]">{number}</div>
         <div>
