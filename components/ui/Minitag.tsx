@@ -6,7 +6,7 @@ interface ITag {
 }
 export const MiniTag = ({ icon, text }: ITag) => {
   return (
-    <div className="border-white border flex justify-center gap-[3px] items-center h-[24px] rounded-[3px] text-[10px] min-w-auto px-[6px] py-[4px] ">
+    <div className="border-white overflow-hidden border flex justify-center gap-[3px] items-center h-[24px] rounded-[3px] text-[10px] min-w-auto px-[6px] py-[4px] ">
       <div>{icon}</div>
       {text}
     </div>

@@ -1,9 +1,16 @@
-import React from 'react'
+import Head from "next/head";
 
-const buy = () => {
+const Buy = () => {
+
+  
   return (
-    <div>buy</div>
-  )
-}
+    <div className="w-full h-screen ">
+      <Head>
+        <title>Buy</title>
+      </Head>
+    
+    </div>
+  );
+};
 
-export default buy
+export default Buy;
