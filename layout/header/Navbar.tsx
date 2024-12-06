@@ -8,7 +8,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-glass w-full max-w-[633px] rounded-[30px] h-[52px] flex justify-center items-center">
+    <nav className="bg-glass w-full max-w-[633px] rounded-[30px] h-[52px] hidden lg:flex justify-center items-center">
       <div className="flex justify-between items-center w-full px-8">
         <NavLink href="/" text="Home" active={router.pathname === "/"} />
         <NavLink href="/buy" text="Buy" active={router.pathname === "/buy"} />
@@ -22,11 +22,11 @@ const Navbar = () => {
           text="Off Plan"
           // active={router.pathname === "/offline"}
         />
-        <NavLink
+        {/* <NavLink
           href="/comming-soon"
           text="Commercial"
           // active={router.pathname === "/commercial"}
-        />
+        /> */}
         <NavDropdown text="Latest Insights" />
         <NavDropdown text="Explore More" />
       </div>
