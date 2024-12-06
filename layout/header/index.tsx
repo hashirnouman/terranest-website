@@ -9,7 +9,7 @@ const Header = () => {
   console.log(pathname);
   return (
     <header className=" sticky top-0 z-10 w-full ">
-      <div className="flex  gap-[100px] items-center justify-between  w-full ">
+      <div className="flex   items-center justify-between  w-full ">
         <div className="bg-glass flex items-center justify-center rounded-[20px] gap-[13px] min-w-[154px] py-[14px] px-[18px] ">
           <Image src="/images/logo.svg" alt="logo" width={154} height={44} />
         </div>
