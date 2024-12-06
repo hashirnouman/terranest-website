@@ -5,7 +5,7 @@ import { useState } from "react";
 const FeatureCard = () => {
   const [color, setColor] = useState("black");
   return (
-    <div className="bg-glass border-custom rounded-[10px] h-[541px] w-[380px]  pt-[32px] flex flex-col items-center px-[22px] ">
+    <div className="bg-glass border-custom rounded-[10px] h-[541px] lg:min-w-[380px] w-full lg:pt-[32px] pt-4 flex flex-col items-center lg:px-[22px] px-3">
       <div className="h-[239px] mb-[17px] relative">
         <Image
           src="/images/card-image.jpeg"
@@ -32,11 +32,9 @@ const FeatureCard = () => {
       </div>
       <div className="mb-[17.9px] w-full">
         <p className="font-secondary font-bold text-[14px]">
-          Prime Location | Best View | Best Apartments
+          Prime Location | Sea View | 
         </p>
-        <p className="font-secondary font-semibold text-[14px] text-left underline">
-          Apartment
-        </p>
+       
       </div>
       <div className="flex gap-[5px] flex-wrap w-full ">
         <Tag
@@ -80,7 +78,7 @@ const FeatureCard = () => {
         />
       </div>
       <button
-        className="w-[309px] h-[41.22px] bg-white text-black flex justify-center items-center gap-[8px]  rounded-[10px] font-secondary font-medium hover:bg-[#34249E] hover:text-white transition-all ease-in-out "
+        className="lg:w-[309px] w-full h-[41.22px] bg-white text-black flex justify-center items-center gap-[8px]  rounded-[10px] font-secondary font-medium hover:bg-[#34249E] hover:text-white transition-all ease-in-out "
         onMouseEnter={() => setColor("white")}
         onMouseLeave={() => setColor("black")}
       >

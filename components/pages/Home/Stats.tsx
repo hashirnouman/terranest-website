@@ -56,8 +56,8 @@ const data = [
 ];
 const Stats = () => {
   return (
-    <div className="flex gap-[10px]">
-      <div className="bg-glass h-[470px] w-[75%] rounded-[20px] border-custom">
+    <div className="flex lg:flex-row flex-col  gap-[10px]">
+      <div className="bg-glass  lg:h-[470px] h-52 lg:w-[75%] w-full rounded-[20px] border-custom">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             width={500}
@@ -85,10 +85,10 @@ const Stats = () => {
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex flex-col justify-between w-[25%]">
+      <div className="flex flex-col gap-6 justify-between lg:w-[25%] w-full">
         <FactCard
           number="754"
-          text="Total Transactions"
+          text="Total Transactions Today"
           url="/icons/estate.png"
         />
         <FactCard number="21.7 B" text="Total Worth" url="/icons/money.png" />

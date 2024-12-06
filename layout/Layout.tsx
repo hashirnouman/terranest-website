@@ -7,7 +7,7 @@ interface ILayout {
 }
 const Layout = ({ children }: ILayout) => {
   return (
-    <div className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat -z-10 bg-main pt-[32px] px-[30px]">
+    <div className="fixed inset-0 w-full h-full bg-cover bg-center bg-no-repeat -z-10 bg-main md:pt-[32px] pt-4 md:px-[30px] px-[10px]">
       <Header />
       {children}
       <Footer />

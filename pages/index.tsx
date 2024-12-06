@@ -12,9 +12,9 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <div className="mt-[10px]">
-        <div className="flex gap-[10px] ">
+        <div className="flex md:flex-row flex-col-reverse gap-[10px] ">
           <Aside />
-          <div className="w-[80%] flex flex-col gap-[10px]">
+          <div className="lg:w-[80%] w-full flex flex-col gap-[10px]">
             <Section />
             <Stats />
           </div>

@@ -2,7 +2,7 @@ import ReasonCard from "./ReasonCard";
 
 const WhyDubai = () => {
   return (
-    <div className="bg-glass w-full h-[895px] rounded-[20px] mt-[67px] flex flex-col items-center px-[22px]">
+    <div className="bg-glass w-full  rounded-[20px] mt-[47px] flex flex-col items-center py-[22px] px-[22px]">
       <div className="flex flex-col justify-start items-center w-full mb-[44px]">
         <div className="text-[50px] font-sans font-semibold mt-[36px] mb-[26px]">
           Why Dubai?
@@ -12,7 +12,7 @@ const WhyDubai = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </p>
       </div>
-      <div className="flex gap-[11px] items-center">
+      <div className="flex lg:flex-row flex-col gap-[11px] items-center">
         <ReasonCard
           image="/images/sofa-1.png"
           title="Reason 1"
