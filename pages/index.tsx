@@ -14,7 +14,7 @@ export default function Home() {
       <div className="mt-[10px]">
         <div className="flex md:flex-row flex-col-reverse gap-[10px] ">
           <Aside />
-          <div className="lg:w-[80%] w-full flex flex-col gap-[10px]">
+          <div className="lg:w-[80%] md:[70%] w-full flex flex-col gap-[10px]">
             <Section />
             <Stats />
           </div>

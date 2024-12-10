@@ -32,9 +32,8 @@ const FeatureCard = () => {
       </div>
       <div className="mb-[17.9px] w-full">
         <p className="font-secondary font-bold text-[14px]">
-          Prime Location | Sea View | 
+          Prime Location | Sea View |
         </p>
-       
       </div>
       <div className="flex gap-[5px] flex-wrap w-full ">
         <Tag

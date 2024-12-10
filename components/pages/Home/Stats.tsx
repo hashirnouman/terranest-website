@@ -1,5 +1,6 @@
 import FactCard from "./FactCard";
 import Numbercard from "./Numbercard";
+
 import {
   LineChart,
   Line,
@@ -54,10 +55,13 @@ const data = [
     amt: 2100,
   },
 ];
+
 const Stats = () => {
   return (
     <div className="flex lg:flex-row flex-col  gap-[10px]">
       <div className="bg-glass  lg:h-[470px] h-52 lg:w-[75%] w-full rounded-[20px] border-custom">
+        {/*! dont delete commented code below of graph */}
+
         <ResponsiveContainer width="100%" height="100%">
           <LineChart
             width={500}
