@@ -14,6 +14,7 @@ const Filters = () => {
 
   return (
     <div className="mt-[37px] flex w-full justify-between  items-center ">
+      
       <DropDown
         list={["Rent", "Buy"]}
         widthClass="w-[93px]"

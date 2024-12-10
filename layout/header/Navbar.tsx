@@ -18,9 +18,9 @@ const Navbar = () => {
           active={router.pathname === "/rent"}   
         />
         <NavLink
-          href="/comming-soon"
+          href="/offplan"
           text="Off Plan"
-          // active={router.pathname === "/offline"}
+          active={router.pathname === "/offplan"}
         />
         {/* <NavLink
           href="/comming-soon"
