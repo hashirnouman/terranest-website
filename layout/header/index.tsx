@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { usePathname } from "next/navigation";
-import Filters from "./Filters";
+import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -25,7 +24,7 @@ const Header = () => {
         <GiHamburgerMenu className="text-[30px]"  />
         </div>
       </div>
-      {(pathname == "/buy" || pathname == "/rent") && <Filters />}
+      {/* {(pathname == "/buy" || pathname == "/rent") && <Filters />} */}
     </header>
   );
 };

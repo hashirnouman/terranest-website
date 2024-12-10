@@ -4,11 +4,11 @@ import { ListFilter } from "lucide-react";
 import Head from "next/head";
 import { Button } from "react-aria-components";
 
-const Buy = () => {
+const Rent = () => {
   return (
     <div className="w-full">
       <Head>
-        <title>Buy</title>
+        <title>Rent</title>
       </Head>
 
       <div className="space-y-4">
@@ -70,4 +70,4 @@ const Buy = () => {
   );
 };
 
-export default Buy;
+export default Rent;

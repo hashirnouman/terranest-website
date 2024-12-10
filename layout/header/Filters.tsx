@@ -1,22 +1,31 @@
-import {DropDown} from "@/components/ui/DropDown";
+import { DropDown } from "@/components/ui/DropDown";
 import { useState } from "react";
 
 import { CircleX, Search, SlidersHorizontal } from "lucide-react";
+import { useRouter } from "next/router";
 import { Button } from "react-aria-components";
 const Filters = () => {
-  const [listingType, setListingType] = useState("Rent");
   const [propertyType, setPropertyType] = useState("");
   const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
   const [totalBeds, setTotalBeds] = useState("");
-  const [searchTerm, setSearchTerm] = useState("fdad");
+  const [searchTerm, setSearchTerm] = useState("");
+  const router = useRouter();
+
   return (
-    <div className="mt-[37px] flex w-full justify-between  items-center  static top-0">
+    <div className="mt-[37px] flex w-full justify-between  items-center ">
       <DropDown
         list={["Rent", "Buy"]}
         widthClass="w-[93px]"
-        selectedValue={listingType}
-        onSelectionChange={(e) => setListingType(e)}
+        selectedValue={router.pathname == "/buy" ? "Buy" : "Rent"}
+        onSelectionChange={() => {
+          if (router.pathname == "/buy") {
+            router.push("/rent");
+          } else {
+            router.push("/buy");
+          }
+        }}
+        placeholder=""
       />
       <div className="h-[48px] w-[307px] rounded-[10px] border-custom flex items-center pl-[20px] pr-[10px] gap-[5px] bg-glass">
         <Search color="white" size={20} />
@@ -24,6 +33,7 @@ const Filters = () => {
           className="w-full h-full border-none outline-none bg-transparent"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search"
         />
         <div className="w-[20px] h-full flex justify-center items-center">
           {searchTerm.length > 0 && (

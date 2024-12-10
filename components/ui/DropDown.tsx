@@ -23,6 +23,7 @@ export const DropDown = (props: IDropDown) => {
       selectedKey={selectedValue}
       onSelectionChange={(key) => onSelectionChange(key.toString())}
       placeholder={placeholder}
+      className="overflow-hidden"
     >
       <Button
         className={`bg-glass h-[48px] ${widthClass} px-[11px] rounded-[10px] outline-none flex justify-center items-center gap-[5px] border-custom`}
@@ -32,8 +33,10 @@ export const DropDown = (props: IDropDown) => {
           <ChevronDown size={15} />
         </span>
       </Button>
-      <Popover className={`bg-glass ${widthClass} rounded-[10px] `}>
-        <ListBox className="space-y-[10px] w-full px-[10px] py-[20px] ">
+      <Popover
+        className={`bg-glass ${widthClass} rounded-[10px] overflow-hidden `}
+      >
+        <ListBox className="space-y-[10px] w-full px-[10px] py-[20px] overflow-hidden">
           {list?.map((item, index) => (
             <ListBoxItem
               className="outline-none   cursor-pointer"
