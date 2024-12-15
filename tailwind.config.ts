@@ -15,7 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['Urbanist', 'sans-serif'],
-        secondary:['Poppins']
+        secondary:['Poppins'],
+        poppins:['Poppins'],
       },
       backgroundImage: {
         'main': "url('/images/background-2.png')",

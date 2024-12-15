@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import NavLink from "./NavLink";
 import { NavDropdown } from "./NavDropdown";
-
+import NavLink from "./NavLink";
+import { latestInsightsLinks, exploreMoreLinks } from "@/constants/navlinks";
 // Create a new component for dropdown-style nav items
 
 const Navbar = () => {
@@ -15,20 +15,28 @@ const Navbar = () => {
         <NavLink
           href="/rent"
           text="Rent"
-          active={router.pathname === "/rent"}   
+          active={router.pathname === "/rent"}
         />
         <NavLink
           href="/offplan"
           text="Off Plan"
           active={router.pathname === "/offplan"}
         />
-        {/* <NavLink
-          href="/comming-soon"
-          text="Commercial"
-          // active={router.pathname === "/commercial"}
-        /> */}
-        <NavDropdown text="Latest Insights" />
-        <NavDropdown text="Explore More" />
+
+        <NavDropdown
+          list={latestInsightsLinks}
+          widthClass="w-auto"
+          selectedValue={""}
+          onSelectionChange={(e) => console.log(e)}
+          placeholder="Latest Insights"
+        />
+        <NavDropdown
+          list={exploreMoreLinks}
+          widthClass="w-auto"
+          selectedValue={""}
+          onSelectionChange={(e: unknown) => console.log(e)}
+          placeholder="Explore More"
+        />
       </div>
     </nav>
   );

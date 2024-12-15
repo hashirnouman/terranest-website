@@ -14,10 +14,19 @@ interface IDropDown {
   list: string[];
   onSelectionChange: (value: string) => void;
   placeholder?: string;
+  bgClass?: string;
+  heightClass?:string
 }
 export const DropDown = (props: IDropDown) => {
-  const { widthClass, list, selectedValue, onSelectionChange, placeholder } =
-    props;
+  const {
+    widthClass,
+    list,
+    selectedValue,
+    onSelectionChange,
+    placeholder,
+    bgClass,
+    heightClass
+  } = props;
   return (
     <Select
       selectedKey={selectedValue}
@@ -26,7 +35,9 @@ export const DropDown = (props: IDropDown) => {
       className="overflow-hidden"
     >
       <Button
-        className={`bg-glass h-[48px] ${widthClass} px-[11px] rounded-[10px] outline-none flex justify-center items-center gap-[5px] border-custom`}
+        className={`${
+          bgClass ? bgClass : "bg-glass"
+        } ${heightClass ? heightClass :'h-[48px]'} ${widthClass} px-[11px] rounded-[10px] outline-none flex justify-center items-center gap-[5px] border-custom`}
       >
         <SelectValue />
         <span aria-hidden="true">
@@ -51,5 +62,3 @@ export const DropDown = (props: IDropDown) => {
     </Select>
   );
 };
-
-
