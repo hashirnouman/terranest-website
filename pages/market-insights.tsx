@@ -14,7 +14,7 @@ const MarketInsights = () => {
         <meta name="description" content="Market insights"/>
       </Head>
       <div className="w-full rounded-[20px] bg-glass h-full py-[26px]  pl-[18px]">
-        <div className="w-full flex justify-center mb-[32px]">
+        <div className="w-full flex justify-center mb-[32px] h-full">
           <h1 className="font-secondary font-bold text-[42px] text-center w-[874px] leading-[120%]">
             Make better-informed property decisions today with the latest Dubai
             property market reports!
