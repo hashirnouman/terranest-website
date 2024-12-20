@@ -15,7 +15,9 @@ const InsightCard = ({ image, title, date }: IInsightCard) => {
         className="rounded-[10px]"
       />
       <div className="font-poppins text-white w-[349px] overflow-hidden">
-        <p className=" font-semibold text-[13.68px] leading-[120%] w-full overflow-hidden">{title}</p>
+        <p className=" font-semibold text-[13.68px]  w-full overflow-hidden">
+          {title}
+        </p>
         <p className=" text-[11.4px]">{date}</p>
       </div>
     </div>

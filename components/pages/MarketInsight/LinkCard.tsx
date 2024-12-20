@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const LinkCard = () => {
   return (
@@ -13,13 +13,13 @@ const LinkCard = () => {
       />
 
       <div className="font-poppins text-white w-[349px]">
-        <p className=" font-semibold text-[21px] leading-[120%]">
+        <p className=" font-semibold text-[21px] ">
           Make better-informed property decisions today with the latest Dubai.
         </p>
         <p className=" text-[17px]">08-11-2024</p>
       </div>
     </div>
   );
-}
+};
 
-export default LinkCard
+export default LinkCard;
