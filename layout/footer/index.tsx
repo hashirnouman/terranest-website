@@ -40,6 +40,7 @@ const Footer = () => {
             className="w-[41px] h-[41px] rounded-[45px] bg-white flex justify-center items-center"
           >
             <Image src="/icons/fb.svg" width={18} height={18} alt="facebook" />
+            
           </Link>
           <Link
             href=""
