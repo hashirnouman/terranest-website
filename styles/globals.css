@@ -4,6 +4,7 @@
 .no-overflow {
   overflow-y: hidden !important;
 }
+
 @layer components {
   .bg-glass {
     @apply bg-[#38383780] bg-opacity-[50%] backdrop-blur-[18px] border-white border-opacity-[50%] border-[1px] text-white;
